@@ -1,0 +1,54 @@
+@import "../../../../styles.scss";
+
+:host{
+display: block;
+}
+
+:host.light {
+    --bg: #fff;
+    --text: #000;
+  }
+  
+:host.dark {
+  --bg: $color-gray-200;
+  --color: white;
+  --text: white;
+  color: white;
+}
+
+:host.fill input {
+  background-color: $color-gray-200;
+  border: none;
+  padding: 8px;
+  color: white;
+  border-radius: 2px;
+}
+
+:host.outline input {
+  background-color: transparent;
+  border: 1px solid var(--text);
+  padding: 8px;
+  border-radius: 2px;
+}
+
+div{
+  label{
+    font-size: 0.7rem;
+    font-weight: bold;
+  }
+  
+  input{
+    width: 100%;
+    box-sizing: border-box;
+    &:focus{
+      outline: none;
+      box-shadow: none;
+    }
+  }
+
+  .validation-text{
+    color:red;
+  }
+}
+
+

@@ -1,0 +1,34 @@
+@import "../../../../../../styles.scss";
+
+:host{
+    display: block;
+    width: 100%;
+}
+
+.title{
+    color:white;
+}
+
+.container{
+    padding: 50px;
+    background-color: $color-gray-secondary;
+    margin-top:1em;
+    height: 90%;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:3em;
+    .loader{
+        margin-top: 3em;
+        width: 7em;
+        animation: spin 0.7s linear infinite;
+    }
+
+    @keyframes spin {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+    }
+
+
+}

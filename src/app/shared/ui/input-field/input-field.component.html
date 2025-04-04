@@ -1,0 +1,13 @@
+<div>
+    <label>{{ label }}</label>
+    <br/>
+    <input 
+      [placeholder]="hint"
+      [value]="value" 
+      [type]="password?'password':'text'" 
+      (blur)="onTouched()" 
+      (input)="onInputChange($event)" 
+    />
+    <label class="validation-text">{{validationText}}</label>
+</div>
+  

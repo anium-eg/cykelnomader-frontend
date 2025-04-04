@@ -1,0 +1,38 @@
+@import "../../../../../../styles.scss";
+
+:host{
+    display: block;
+    width: 100%;
+}
+
+.title{
+    color:white;
+}
+
+.container{
+    padding: 30px;
+    background-color: $color-gray-secondary;
+    margin-top:1em;
+    height: 90%;
+    color: $color-gray-300;
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+
+    .subtitle{
+        color:white;
+    }
+
+    .final-cost{
+        color:$color-primary;
+    }
+
+    
+    .action-section{
+        display: flex;
+        gap:10px;
+        align-self: end;
+        margin-top: auto;
+    }
+
+}

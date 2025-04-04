@@ -1,0 +1,14 @@
+<div class="container">
+    <img [src]="headerImageSrc" class="header-image"/>
+
+    <div class="action-section">
+        <span class="title">ACTIONS</span>
+
+        <div *ngFor="let item of actionItems; let i = index" class="action-group" (click)="onActionSelect(item)">
+            <img class="action-logo" [src]="item.logo">
+            <span class="action-text" [ngClass]="{'active-text': item.isActive}">{{item.text}}</span>
+        </div>
+    </div>
+
+    <app-button theme="primary" type="outline" text="Logout" size="small" class="logout-button"/>
+</div>

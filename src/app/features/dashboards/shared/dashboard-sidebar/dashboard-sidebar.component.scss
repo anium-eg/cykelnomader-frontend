@@ -1,0 +1,59 @@
+@import '../../../../../styles.scss';
+
+.container{
+    display: flex;
+    flex-direction: column;
+    background-color: $color-gray-secondary;
+    width:19vw;
+    max-width: 300px;
+    height: 100vh;
+    align-items: center;
+    .header-image{
+        width: 60%;
+        max-width: 200px;
+        margin: 2rem;
+    }
+    
+    .action-section{
+        align-self: flex-start;
+        margin: 0 13px;
+
+
+        .title{
+            font-size: 8px;
+            color: white;
+            font-weight: 500;
+        }
+    
+        .action-group{
+            margin:10px 5px;
+            cursor: pointer;
+            display: flex;
+            gap: 10px;
+            color:white;
+            font-weight: 200;
+
+            .active-text{
+                color: $color-primary;
+                font-weight: 500;
+            }
+            .action-logo{
+                width: 15px;
+            }
+            .action-text{
+                font-size: small;
+            }
+
+            :hover{
+                color: $color-primary;
+                font-weight: 500;
+            }
+        }
+    }
+
+    .logout-button{
+        margin-top: auto;
+        margin-bottom:10%;
+    }
+
+}

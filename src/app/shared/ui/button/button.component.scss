@@ -1,0 +1,85 @@
+@import '/src/styles.scss';
+
+$border-width: 1px;
+
+@mixin btn-color($color) {
+  background-color: $color;
+  border: $border-width solid $color;
+  color: $color;
+}
+
+$button-sizes: (
+  small: (padding: 7px 15px, font-size: 8px),
+  medium: (padding: 10px 25px, font-size: 10px),
+  large: (padding: 12px 60px, font-size: 16px)
+);
+
+@mixin btn-size($size) {
+  $props: map-get($button-sizes, $size);
+  padding: map-get($props, padding);
+  font-size: map-get($props, font-size);
+}
+
+
+:host.primary button {
+  @include btn-color($color-primary);
+}
+
+:host.success button {
+  @include btn-color(green);
+}
+
+:host.danger button {
+  @include btn-color(#CC3030);
+}
+
+:host.warn button {
+  @include btn-color(orange);
+}
+
+:host.small button {
+  @include btn-size(small);
+}
+
+:host.medium button {
+  @include btn-size(medium);
+}
+
+:host.large button {
+  @include btn-size(large);
+}
+
+:host {
+  display: block;
+}
+
+:host.outline button {
+  background-color: transparent;
+}
+
+:host.fill button {
+  color: white;
+
+}
+
+:host(.fill.primary) button {
+  color: black;
+}
+
+:host(.disabled.fill) button{
+  cursor: not-allowed;
+  background-color: gray;
+  color: white;
+}
+
+:host(.disabled.outline) button{
+  cursor: not-allowed;
+  color: gray;
+  border: $border-width solid grey;
+}
+
+button {
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 2px;
+}

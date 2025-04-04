@@ -1,0 +1,8 @@
+@import "../../../../styles.scss";
+
+.container{
+    display: flex;
+    .router-outlet-div{
+        width: 100%;
+    }
+}

@@ -1,0 +1,27 @@
+@import "../../../../../../styles.scss";
+
+:host{
+    display: block;
+    width: 100%;
+}
+
+.title{
+    color:white;
+}
+
+.form-container{
+    padding: 20px;
+    background-color: $color-gray-secondary;
+    margin-top:1em;
+    height: 90%;
+    form{
+        display: flex;
+        flex-direction: column;
+        gap:20px;
+        height: 100%;
+        .submit-button{
+            align-self: end;
+            margin-top: auto;
+        }
+    }
+}

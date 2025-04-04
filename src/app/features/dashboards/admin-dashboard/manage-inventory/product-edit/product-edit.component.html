@@ -1,0 +1,30 @@
+<section class="container">
+
+        <form class="form">
+            <h4>Modify Item</h4>
+            
+            <div class="image-container" [ngSwitch]="imageUrl">
+                
+                <div *ngSwitchCase="undefined" class="image-upload" (click)="openFileSelector(imageInput)">
+                    <input #imageInput type="file" style="display: none;" (change)="onFileSelected($event)"/>
+                    <div class="image-upload-text">Upload image</div>
+                    <img class="image-upload-placeholder" src="assets/images/dashboard/admin/edit-product/Upload.svg">
+                </div>
+                <div *ngSwitchDefault class="uploaded-image-section">
+                    <img  [src]="imageUrl">
+                    <app-button theme="danger" size="small" text="Remove"  (onClick)="uploadContent()"/>
+                </div>
+
+            </div>
+            <app-input-field label="Product Name"/>
+            <app-input-field label="Brand Name"/>
+            <app-input-field label="Model Number"/>
+            <app-input-field label="Item price"/>
+            <div class="action-section">
+                <app-button type="outline" theme="danger" text="Cancel"/>
+                <app-button  text="Save Changes"/>
+            </div>
+
+        </form>
+
+</section>

@@ -1,0 +1,48 @@
+@import "../../../../../../../styles.scss";
+
+.container{
+    background-color: $color-gray-secondary;
+    padding:20px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    color: white;
+    width: 18em;
+    border-radius: 5px;
+
+    .product-name{
+        font-size: small;
+        font-weight: bold;
+        max-width: 17em;
+
+    }
+    
+    .model-number{
+        color: $color-gray-300;
+        font-size: x-small;
+    }
+
+    .product-image{
+        width: 8em;
+        align-self: center;
+    }
+
+    .bottom-section{
+        display: flex;
+        align-items: center;
+        gap:80px;
+        .stock-status{
+            font-size: xx-small;
+            font-weight: 200;
+        }
+    
+        .price{
+            font-size: medium;
+        }
+
+        .order-button{
+            margin-left: auto;
+        }
+    }
+
+}

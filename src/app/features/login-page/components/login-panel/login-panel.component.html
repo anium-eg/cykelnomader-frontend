@@ -1,0 +1,12 @@
+<img src = "assets/images/Logo-ColorVersion.svg" class="logo"/>
+<br>
+<app-text-toggle-slider (personaChanged)="handlePersonaChange($event)"/>
+<br>
+<h1>{{persona}} Login Panel</h1>
+<form [formGroup]="formData">
+    <app-input-field label="Username" formControlName="username" theme="light" type="outline"/>
+    <app-input-field label="Password" formControlName="password" theme="light" type="outline" [password]="true"/>
+    <app-button [text]="'Login'" (onClick)="handleLogin()" size="medium"/>
+</form>
+
+<span *ngIf="credentialError" class = "error-text">Invalid credentials. Try again.</span>

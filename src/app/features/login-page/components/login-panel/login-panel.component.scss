@@ -1,0 +1,27 @@
+
+:host{
+    display: block;
+    width: 60%;
+    .logo{
+        width: 12rem;
+    }
+    app-input-field{
+        margin-top: 5px;
+    }
+    app-button{
+        margin-top: 20px;
+    }
+    .error-text{
+        display: block;
+        margin-top:20px;
+        font-size: small;
+        font-weight: bold;
+        color: red;
+
+    }
+
+}
+
+
+
+

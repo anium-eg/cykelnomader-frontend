@@ -1,0 +1,61 @@
+@import 'src/styles.scss';
+
+.container{
+    display: flex;
+    height: 100vh;
+
+    .left-section{        
+        height: 100vh;
+        background-color: $color-gray-secondary;
+        width:48%;
+        align-content: center;
+        justify-items: center;
+        .content{
+            max-width: 90%;
+            display: flex;
+            flex-direction: column;
+            gap:50px;
+
+            .title-div{
+                align-self: flex-start;
+                .title{
+                    align-self: left;
+                    justify-self: left;
+                    display: flex;
+                    align-items: center;
+                    color: white;
+                    width: auto;
+                    
+                    .version{
+                        display:flex;
+        
+                        margin-left: 10px;
+                        font-size: small;
+                    }
+                }
+
+                .infinityLogoImage{
+                    width: 10%;
+                }
+            }
+
+    
+            .wireframeVortex{
+                align-self: center;
+                display: block;
+                width: 70%;
+                justify-self: right;
+            }
+    
+
+        }
+
+    }
+
+    .right-section{
+        width: 52%;
+        align-content: center;
+        justify-items: center;
+
+    }
+}

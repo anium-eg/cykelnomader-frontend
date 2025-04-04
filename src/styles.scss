@@ -1,1 +1,20 @@
-/* You can add global styles to this file, and also import other style files */
+//Global configurations
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;   
+}
+
+h1{
+    font-size: x-large;
+}
+
+//Colors
+$color-primary: #EFE947;
+
+$color-gray-secondary:#1E1E1E;
+$color-gray-primary:#1a1a1a;
+
+$color-gray-100: #737373;
+$color-gray-200: #2e2e2e;
+$color-gray-300: #828282;
